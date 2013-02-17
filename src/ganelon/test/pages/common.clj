@@ -50,7 +50,10 @@
      [:footer {:style "text-align: center; padding: 30px 0; margin-top: 70px; border-top: 1px solid #E5E5E5; color: #f6f6f6; background: url(/ganelon-demo/img/low_contrast_linen.png);"}
       [:div.container
         [:p "The Ganelon framework has been designed, created and is maintained by " [:a {:href "http://twitter.com/tomeklipski"} "@tomeklipski"] "."]
-        [:p "The code is available under " [:a {:href "http://opensource.org/licenses/eclipse-1.0.php"} "Eclipse Public License 1.0"] "."]]]
+        [:p "The code is available under " [:a {:href "http://opensource.org/licenses/eclipse-1.0.php"} "Eclipse Public License 1.0"] "."]
+        [:p "This demo site runs on " [:a {:href "http://heroku.com"} "heroku"] ". Source code highlightning powered by "
+         [:a {:href "http://hilite.me/"} "hilite.me"] "."]
+        ]]
 (hiccup/include-js "/ganelon/js/jquery-1.8.1.min.js")
 (hiccup/include-js "/ganelon/js/bootstrap.js")
 (hiccup/include-js "/ganelon/js/ganelon.js")

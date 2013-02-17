@@ -17,7 +17,7 @@
         (ganelon.web.app/javascript-actions-route))
       middleware/wrap-x-forwarded-for
       (ring.middleware.stacktrace/wrap-stacktrace)
-      (ring.middleware.reload/wrap-reload {:dirs ["test/ganelon/test/pages"]}))
+      (ring.middleware.reload/wrap-reload {:dirs ["src/ganelon/test/pages"]}))
     {:port port :join? false}))
 
 (defn -main [& m]

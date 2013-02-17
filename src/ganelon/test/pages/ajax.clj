@@ -106,7 +106,7 @@
         [:div#sample0.alert.alert-success "I'm a DIV, update me with AJAX!"]
         [:p (widgets/action-link "ajax/sample0" {:msg "There ya go!"} {} [:span "Sure!"])]
         [:h3 "Referencing actions - server-side"]
-        [:p "To invoke an action, we can use one of the provided macros/functions:"]
+        [:p "To generate HTML/JavaScript code invoking an action, we can use one of the provided macros/functions:"]
         [:ul
          [:li [:code "ganelon.web.widgets/action-link"] " - a simple link, which adds widget-id parameter automatically (you can overwrite it though)"]
          [:li [:code "ganelon.web.widgets/action-button"] " - a button, which works as link above"]
