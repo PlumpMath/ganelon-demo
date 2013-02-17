@@ -1,0 +1,80 @@
+code, pre {
+    font-size: 13px;
+    font-family: monospace;
+}
+
+pre {
+    padding: 5px;
+    background-color: #2a2a2a;
+    color: #f7f7f7;
+}
+
+.hibox {
+    border: 2px dotted #0088cc;
+    padding: 3px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+div.code, div[style='background: #f8f8f8; overflow:auto;width:auto;color:white;background:black;border:solid gray;border-width:.1em .1em .1em .1em;padding:.1em .1em;'] {
+    border-radius: 8px;
+    border: solid #2a2a2a !important;
+    background: #2a2a2a !important;
+}
+
+.code pre {
+    border: 1px solid #2a2a2a !important;
+}
+
+pre.code {
+    margin: 0;
+    line-height: 125%;
+}
+
+.code .keyword {
+    color: #AA22FF;
+    /*color: #cc7832;*/
+    font-weight: bold;
+}
+
+.code .statement {
+    color: #AA22FF;
+    /*color: #cc7832;*/
+}
+
+.code .symbol {
+    color: #B8860B;
+    /*color: #cc7832;*/
+
+}
+
+.code .function {
+    color: #00A000;
+/*    color: #cc7832;*/
+}
+
+.code .literal {
+    color: #BB4444;
+    /*color: #a5c25c;*/
+}
+
+.code .numeric {
+    color: #BB4444;
+}
+
+.code .comment {
+    color: #666666;
+    font-style: italic;
+}
+
+
+.box-widget {
+    border: 2px dashed #d14;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+
+}
