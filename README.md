@@ -1,3 +1,7 @@
+Demo site
+------------------
+This is a demo site for Ganelon microframework, deployed to [http://ganelon.tomeklipski.com/](http://ganelon.tomeklipski.com/) - in fact Heroku.
+
 Ganelon microframework
 -----------------
 Ganelon microframework brings rapid development of dynamic web applications to Clojure, by introducing thin JavaScript
