@@ -60,7 +60,7 @@
       [:div {:style "text-align: center"}
         [:div
          [:a.btn.btn-large.btn-primary {:href "https://github.com/tlipski/ganelon" :style "margin-right: 10px"} [:i.icon-github] "&nbsp;Browse the source codes"]
-         [:a.btn.btn-large.btn-primary {:href "https://github.com/tlipski/ganelon/star":style "margin-left: 10px"} [:i.icon-star] "&nbsp;Star on GitHub"]
+         [:a.btn.btn-large.btn-primary {:href "https://github.com/tlipski/ganelon/stargazers":style "margin-left: 10px"} [:i.icon-star] "&nbsp;Star on GitHub"]
          ]]
       )
     [:div {:class "container" :style "padding-top: 30px;"}
