@@ -1,6 +1,6 @@
 Demo site
 ------------------
-This is a demo site for Ganelon microframework, deployed to [http://ganelon.tomeklipski.com/](http://ganelon.tomeklipski.com/) - in fact Heroku.
+This is a demo site for Ganelon microframework, deployed to [http://ganelon.tomeklipski.com/](http://ganelon.tomeklipski.com/) - which runs on Heroku stack.
 
 Ganelon microframework
 -----------------
