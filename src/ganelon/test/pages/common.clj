@@ -1,3 +1,11 @@
+;; Copyright (c) Tomek Lipski. All rights reserved.  The use
+;; and distribution terms for this software are covered by the Eclipse
+;; Public License 1.0 (http://opensource.org/licenses/eclipse-1.0.php)
+;; which can be found in the file LICENSE.txt at the root of this
+;; distribution.  By using this software in any fashion, you are
+;; agreeing to be bound by the terms of this license.  You must not
+;; remove this notice, or any other, from this software.
+
 (ns ganelon.test.pages.common
   (:require
     [ganelon.web.dyna-routes :as dyna-routes]
@@ -60,6 +68,18 @@
 (hiccup/include-js "/ganelon/js/ext/ganelon.ops.bootstrap.js")
 (hiccup/include-js "/ganelon/js/ext/ganelon.ops.gritter.js")
 (hiccup/include-js "/ganelon/actions.js")
+"
+<script type=\"text/javascript\">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38800010-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>"
 ]))
 
 (defn banner [title & details]

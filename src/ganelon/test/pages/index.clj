@@ -1,3 +1,11 @@
+;; Copyright (c) Tomek Lipski. All rights reserved.  The use
+;; and distribution terms for this software are covered by the Eclipse
+;; Public License 1.0 (http://opensource.org/licenses/eclipse-1.0.php)
+;; which can be found in the file LICENSE.txt at the root of this
+;; distribution.  By using this software in any fashion, you are
+;; agreeing to be bound by the terms of this license.  You must not
+;; remove this notice, or any other, from this software.
+
 (ns ganelon.test.pages.index
   (:require
     [ganelon.web.dyna-routes :as dyna-routes]
@@ -60,8 +68,8 @@
       [:div.span8
        [:h2 [:i.icon-spinner]"&nbsp;AJAX: as simple as possible"]
        [:p "Ganelon is about just one thing - building real-world,
-       AJAX-enabled web applications with Clojure/Ring as easily and quick as possible."]
-       [:p "Just define your views (Widgets) and ui logic (Actions) in Clojure server-side, and Ganelon framework will take care of technical details."]
+       AJAX-enabled web applications with Clojure/Ring as easily and quickly as possible."]
+       [:p "Just define your views (Widgets) and UI logic (Actions) in Clojure server-side, and Ganelon framework will take care of technical details."]
        [:p "The in-memory shoutbox below (try it!):"]
        [:div.box-widget (box-widget)]
        [:p "Is built with the following code:"]
@@ -118,7 +126,8 @@
         [:li [:a {:href "https://github.com/weavejester/compojure" :target "_blank"} [:strong "Compojure"]] "/" [:a {:href "https://github.com/ring-clojure/ring" :target "_blank"} [:strong "Ring"]]
          " - abstraction and routing of HTTP(S) requests for Clojure."]
         ]
-       [:p "You can also use Ganelon with your own favorite JavaScript framework, even totally replacing Bootstrap and jQuery by providing a thin JavaScript adapter layer!"]
+       [:p "You can also use Ganelon with your own favorite JavaScript framework, even totally replacing Bootstrap and jQuery,
+            by providing a thin JavaScript adapter layer!"]
        ]
       [:div {:class "span6"}
        [:h2 [:i.icon-bolt] "&nbsp;Rapid development"]
