@@ -4,9 +4,9 @@
 
 Example:
 (clear-url &quot;http://localhost:8097/a/i18n-text-edit?key=test&amp;widget-id=9#123&quot;)
-;=&gt; &quot;http://localhost:8097/a/i18n-text-edit&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L114">Source</a></div></div><div class="public" id="var-current-request-host-part"><h3>current-request-host-part</h3><div class="usage"><code>(current-request-host-part)</code></div><pre class="doc">Extract current request URL (without local part, query or anchor) from noir.request/*request*.
-</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L41">Source</a></div></div><div class="public" id="var-current-request-url"><h3>current-request-url</h3><div class="usage"><code>(current-request-url)</code></div><pre class="doc">Extract current request URL (without query or anchor) from noir.request/*request*.
-</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L30">Source</a></div></div><div class="public" id="var-find-substring"><h3>find-substring</h3><div class="usage"><code>(find-substring text substring position)</code></div><pre class="doc">Find a substring index nearest to a designated position.
+;=&gt; &quot;http://localhost:8097/a/i18n-text-edit&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L122">Source</a></div></div><div class="public" id="var-current-request-host-part"><h3>current-request-host-part</h3><div class="usage"><code>(current-request-host-part)</code></div><pre class="doc">Extract current request URL (without local part, query or anchor) from noir.request/*request*.
+</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L49">Source</a></div></div><div class="public" id="var-current-request-url"><h3>current-request-url</h3><div class="usage"><code>(current-request-url)</code></div><pre class="doc">Extract current request URL (without query or anchor) from noir.request/*request*.
+</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L38">Source</a></div></div><div class="public" id="var-find-substring"><h3>find-substring</h3><div class="usage"><code>(find-substring text substring position)</code></div><pre class="doc">Find a substring index nearest to a designated position.
 
 Example:
 (find-substring &quot;abc abc abc abc&quot; &quot;abc&quot; 3)
@@ -14,47 +14,47 @@ Example:
 (find-substring &quot;abc abc abc abc&quot; &quot;abc&quot; 5)
 ;=&gt; 4
 (find-substring &quot;abc abc abc abc&quot; &quot;abc&quot; 7)
-;=&gt; 8</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L57">Source</a></div></div><div class="public" id="var-for%21"><h3>for!</h3><h4 class="macro">macro</h4><div class="usage"><code>(for! var arr &amp; body)</code></div><pre class="doc">Enhanced for macro, which introduces count, first? and last? flags.
+;=&gt; 8</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L65">Source</a></div></div><div class="public" id="var-for%21"><h3>for!</h3><h4 class="macro">macro</h4><div class="usage"><code>(for! var arr &amp; body)</code></div><pre class="doc">Enhanced for macro, which introduces count, first? and last? flags.
 
 Example:
 (for! x [:a :b :c] [x (for!-count) (for!-first?) (for!-last?)])
-;=&gt; ([:a 0 true false] [:b 1 false false] [:c 2 false true])</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L128">Source</a></div></div><div class="public" id="var-for%21-count"><h3>for!-count</h3><div class="usage"><code>(for!-count)</code></div><pre class="doc">See for! macro for details.
-</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L146">Source</a></div></div><div class="public" id="var-for%21-first%3F"><h3>for!-first?</h3><div class="usage"><code>(for!-first?)</code></div><pre class="doc">See for! macro for details.
-</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L151">Source</a></div></div><div class="public" id="var-for%21-last%3F"><h3>for!-last?</h3><div class="usage"><code>(for!-last?)</code></div><pre class="doc">See for! macro for details.
-</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L156">Source</a></div></div><div class="public" id="var-get-request-parameter"><h3>get-request-parameter</h3><div class="usage"><code>(get-request-parameter name)</code></div><pre class="doc">Get noir.request/*request* parameter by name.
-</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L36">Source</a></div></div><div class="public" id="var-gzip%3F"><h3>gzip?</h3><div class="usage"><code>(gzip? b-array)</code></div><pre class="doc">Returns true when the byte array contains gzip magic value in first two bytes.
-</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L204">Source</a></div></div><div class="public" id="var-indexes-of"><h3>indexes-of</h3><div class="usage"><code>(indexes-of f vec)</code></div><pre class="doc">Return indexes of vec elements for which (f %) returns trueish value.
+;=&gt; ([:a 0 true false] [:b 1 false false] [:c 2 false true])</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L136">Source</a></div></div><div class="public" id="var-for%21-count"><h3>for!-count</h3><div class="usage"><code>(for!-count)</code></div><pre class="doc">See for! macro for details.
+</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L154">Source</a></div></div><div class="public" id="var-for%21-first%3F"><h3>for!-first?</h3><div class="usage"><code>(for!-first?)</code></div><pre class="doc">See for! macro for details.
+</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L159">Source</a></div></div><div class="public" id="var-for%21-last%3F"><h3>for!-last?</h3><div class="usage"><code>(for!-last?)</code></div><pre class="doc">See for! macro for details.
+</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L164">Source</a></div></div><div class="public" id="var-get-request-parameter"><h3>get-request-parameter</h3><div class="usage"><code>(get-request-parameter name)</code></div><pre class="doc">Get noir.request/*request* parameter by name.
+</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L44">Source</a></div></div><div class="public" id="var-gzip%3F"><h3>gzip?</h3><div class="usage"><code>(gzip? b-array)</code></div><pre class="doc">Returns true when the byte array contains gzip magic value in first two bytes.
+</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L212">Source</a></div></div><div class="public" id="var-indexes-of"><h3>indexes-of</h3><div class="usage"><code>(indexes-of f vec)</code></div><pre class="doc">Return indexes of vec elements for which (f %) returns trueish value.
 
 Example:
 (indexes-of keyword? [1 2 'x :k 'az 3])
-;=&gt; (3 4)</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L195">Source</a></div></div><div class="public" id="var-keyword-params-str"><h3>keyword-params-str</h3><div class="usage"><code>(keyword-params-str action params)</code></div><pre class="doc">Replace keywords in string with supplied values.
+;=&gt; (3 4)</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L203">Source</a></div></div><div class="public" id="var-keyword-params-str"><h3>keyword-params-str</h3><div class="usage"><code>(keyword-params-str action params)</code></div><pre class="doc">Replace keywords in string with supplied values.
 
 Example:
 (keyword-params-str &quot;:1/:2/:3&quot; {:1 &quot;I&quot; :2 :2 :3 &quot;three&quot;})
-&quot;I/:2/three&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L223">Source</a></div></div><div class="public" id="var-make-query"><h3>make-query</h3><div class="usage"><code>(make-query params)</code></div><pre class="doc">Build URL query string from provided map.
+&quot;I/:2/three&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L231">Source</a></div></div><div class="public" id="var-make-query"><h3>make-query</h3><div class="usage"><code>(make-query params)</code></div><pre class="doc">Build URL query string from provided map.
 
 Example:
 (make-query {:a &quot;1&quot; :b &quot;%&quot; :c &quot; &quot;})
-;=&gt; &quot;a=1&amp;c=+&amp;b=%25&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L20">Source</a></div></div><div class="public" id="var-make-sorted-map"><h3>make-sorted-map</h3><div class="usage"><code>(make-sorted-map m)</code></div><pre class="doc">Transform standard map into sorted - assuring the same order of keywords.
+;=&gt; &quot;a=1&amp;c=+&amp;b=%25&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L28">Source</a></div></div><div class="public" id="var-make-sorted-map"><h3>make-sorted-map</h3><div class="usage"><code>(make-sorted-map m)</code></div><pre class="doc">Transform standard map into sorted - assuring the same order of keywords.
 
 Example:
 (make-sorted-map {:z :2 :a :b :c :d :x :y})
-;=&gt; {:a :b, :c :d, :x :y, :z :2}</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L47">Source</a></div></div><div class="public" id="var-map-contains%3F"><h3>map-contains?</h3><div class="usage"><code>(map-contains? map kvs)</code></div><pre class="doc">Returns true if supplied map contains all of the supplied keys and values.
+;=&gt; {:a :b, :c :d, :x :y, :z :2}</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L55">Source</a></div></div><div class="public" id="var-map-contains%3F"><h3>map-contains?</h3><div class="usage"><code>(map-contains? map kvs)</code></div><pre class="doc">Returns true if supplied map contains all of the supplied keys and values.
 
 Example:
 (map-contains? {:a :b :c :d :e :f} {:a :b :e :f})
 ;=&gt; true
 (map-contains? {:a :b :c :d :e :f} {:a :b :e :d})
-;=&gt; false</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L212">Source</a></div></div><div class="public" id="var-mreplace"><h3>mreplace</h3><div class="usage"><code>(mreplace str rmap)</code></div><pre class="doc">Perform multi-replace on a string. If a specific order of replacement is needed, [[k1 v1] [k2 v2]] structure can be used.
+;=&gt; false</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L220">Source</a></div></div><div class="public" id="var-mreplace"><h3>mreplace</h3><div class="usage"><code>(mreplace str rmap)</code></div><pre class="doc">Perform multi-replace on a string. If a specific order of replacement is needed, [[k1 v1] [k2 v2]] structure can be used.
 
 Example:
 (mreplace &quot;:1/:2/:3&quot; [[#&quot;[0-9]&quot; &quot;I&quot;] [&quot;:&quot; &quot;22&quot;] [&quot;:3&quot; &quot;three&quot;]])
-&quot;22I/22I/22I&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L232">Source</a></div></div><div class="public" id="var-nvl"><h3>nvl</h3><div class="usage"><code>(nvl v)</code></div><pre class="doc">If v is null, return empty string, otherwise return v.
+&quot;22I/22I/22I&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L240">Source</a></div></div><div class="public" id="var-nvl"><h3>nvl</h3><div class="usage"><code>(nvl v)</code></div><pre class="doc">If v is null, return empty string, otherwise return v.
 
 Example:
 [(nvl &quot;!&quot;) (nvl nil)]
-;=&gt; [&quot;!&quot; &quot;&quot;]</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L6">Source</a></div></div><div class="public" id="var-req-params"><h3>req-params</h3><div class="usage"><code>(req-params)</code></div><pre class="doc">Access :params from noir.request/*request*.
-</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L15">Source</a></div></div><div class="public" id="var-schedule-with-fixed-delay%21"><h3>schedule-with-fixed-delay!</h3><div class="usage"><code>(schedule-with-fixed-delay! delay callback error-callback)</code></div><pre class="doc">Schedule single-threaded execution of callback with a delay specified in seconds.
+;=&gt; [&quot;!&quot; &quot;&quot;]</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L14">Source</a></div></div><div class="public" id="var-req-params"><h3>req-params</h3><div class="usage"><code>(req-params)</code></div><pre class="doc">Access :params from noir.request/*request*.
+</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L23">Source</a></div></div><div class="public" id="var-schedule-with-fixed-delay%21"><h3>schedule-with-fixed-delay!</h3><div class="usage"><code>(schedule-with-fixed-delay! delay callback error-callback)</code></div><pre class="doc">Schedule single-threaded execution of callback with a delay specified in seconds.
 If exception occurs during callback execution, error-callback is called.
 
 Example:
@@ -62,7 +62,7 @@ Example:
 ;=&gt; #&lt;ScheduledFutureTask java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@60bf7a4d&gt;
 ;=&gt; #inst &quot;2013-02-15T20:15:24.278-00:00&quot;
 ;=&gt; #inst &quot;2013-02-15T20:15:29.293-00:00&quot;
-;=&gt; #inst &quot;2013-02-15T20:15:34.294-00:00&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L172">Source</a></div></div><div class="public" id="var-smart-subvec"><h3>smart-subvec</h3><div class="usage"><code>(smart-subvec vec start end)</code></div><pre class="doc">Just like clojure.core/subvec, but when vec parameter is not a vector, attempt to convert it.
+;=&gt; #inst &quot;2013-02-15T20:15:34.294-00:00&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L180">Source</a></div></div><div class="public" id="var-smart-subvec"><h3>smart-subvec</h3><div class="usage"><code>(smart-subvec vec start end)</code></div><pre class="doc">Just like clojure.core/subvec, but when vec parameter is not a vector, attempt to convert it.
 If end is greater than vec size, extract less elements.
 
 Example:
@@ -71,25 +71,25 @@ Example:
 (smart-subvec [:a :b :c] 0 1000)
 ;=&gt; [:a :b :c]
 (smart-subvec {:a :b :c :d} 0 1)
-;=&gt; [[:a :b]]</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L95">Source</a></div></div><div class="public" id="var-substring"><h3>substring</h3><div class="usage"><code>(substring str start end)</code></div><pre class="doc">Smarter substring, which detects if string is shorter than end and returns only appropriate portion of it.
+;=&gt; [[:a :b]]</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L103">Source</a></div></div><div class="public" id="var-substring"><h3>substring</h3><div class="usage"><code>(substring str start end)</code></div><pre class="doc">Smarter substring, which detects if string is shorter than end and returns only appropriate portion of it.
 
 Example:
 (substring &quot;abc&quot; 1 5)
-&quot;bc&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L241">Source</a></div></div><div class="public" id="var-to-map"><h3>to-map</h3><div class="usage"><code>(to-map elements key-fn)</code></div><pre class="doc">Transform collection to a map using key-fn to generate keys.
+&quot;bc&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L249">Source</a></div></div><div class="public" id="var-to-map"><h3>to-map</h3><div class="usage"><code>(to-map elements key-fn)</code></div><pre class="doc">Transform collection to a map using key-fn to generate keys.
 
 Example
 (to-map [{:a :b :c :d} {:a :x :c :y}] :a)
-;=&gt; {:b {:a :b, :c :d}, :x {:a :x, :c :y}}</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L251">Source</a></div></div><div class="public" id="var-try-to-extract-sentence"><h3>try-to-extract-sentence</h3><div class="usage"><code>(try-to-extract-sentence text expected-length max-distance)</code></div><pre class="doc">Attempt to extract a sentence ending with a '.' as near to expected length as possible,
+;=&gt; {:b {:a :b, :c :d}, :x {:a :x, :c :y}}</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L259">Source</a></div></div><div class="public" id="var-try-to-extract-sentence"><h3>try-to-extract-sentence</h3><div class="usage"><code>(try-to-extract-sentence text expected-length max-distance)</code></div><pre class="doc">Attempt to extract a sentence ending with a '.' as near to expected length as possible,
 but not further than max-distance. If '.' is not found, look for a nearest ' ' (space) to expected-length in text.
 
 Example:
 (try-to-extract-sentence &quot;abc.abc.abc abc.&quot; 10 1)
 ;=&gt; &quot;abc.abc.abc&quot;
 (try-to-extract-sentence &quot;abc.abc.abc abc.&quot; 10 5)
-;=&gt; &quot;abc.abc.&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L79">Source</a></div></div><div class="public" id="var-with-timeout"><h3>with-timeout</h3><div class="usage"><code>(with-timeout timeout callback)</code></div><pre class="doc">Execute callback with timeout specified in seconds.
+;=&gt; &quot;abc.abc.&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L87">Source</a></div></div><div class="public" id="var-with-timeout"><h3>with-timeout</h3><div class="usage"><code>(with-timeout timeout callback)</code></div><pre class="doc">Execute callback with timeout specified in seconds.
 
 Example:
 (with-timeout 1 #(Thread/sleep 1200))
 ;=&gt; TimeoutException   java.util.concurrent.FutureTask$Sync.innerGet (FutureTask.java:258)
 (with-timeout 1 #(Thread/sleep 900))
-;=&gt; nil</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L161">Source</a></div></div></div></body></html>
+;=&gt; nil</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util.clj#L169">Source</a></div></div></div></body></html>

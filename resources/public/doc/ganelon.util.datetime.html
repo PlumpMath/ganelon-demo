@@ -4,37 +4,37 @@
 
 Example:
 (format-date-and-time (java.util.Date.) &quot;PST&quot;)
-;=&gt; &quot;2013-02-15&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L99">Source</a></div></div><div class="public" id="var-format-date-and-time"><h3>format-date-and-time</h3><div class="usage"><code>(format-date-and-time d tz)</code></div><pre class="doc">Return date and time in 'yyyy-MM-dd HH:mm:ss tz' format.
+;=&gt; &quot;2013-02-15&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L107">Source</a></div></div><div class="public" id="var-format-date-and-time"><h3>format-date-and-time</h3><div class="usage"><code>(format-date-and-time d tz)</code></div><pre class="doc">Return date and time in 'yyyy-MM-dd HH:mm:ss tz' format.
 
 Example:
 (format-date-and-time (java.util.Date.) &quot;PST&quot;)
-;=&gt; &quot;2013-02-15 11:46:32 PST&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L65">Source</a></div></div><div class="public" id="var-format-short-date-and-time"><h3>format-short-date-and-time</h3><div class="usage"><code>(format-short-date-and-time d tz)</code></div><pre class="doc">Return date and time in 'MM-dd_HH:mm' format.
+;=&gt; &quot;2013-02-15 11:46:32 PST&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L73">Source</a></div></div><div class="public" id="var-format-short-date-and-time"><h3>format-short-date-and-time</h3><div class="usage"><code>(format-short-date-and-time d tz)</code></div><pre class="doc">Return date and time in 'MM-dd_HH:mm' format.
 
 Example:
 (format-date-and-time (java.util.Date.) &quot;PST&quot;)
-;=&gt; &quot;02-15_11:46&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L88">Source</a></div></div><div class="public" id="var-format-time"><h3>format-time</h3><div class="usage"><code>(format-time d tz)</code></div><pre class="doc">Return time in 'HH:mm:ss tz' format.
+;=&gt; &quot;02-15_11:46&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L96">Source</a></div></div><div class="public" id="var-format-time"><h3>format-time</h3><div class="usage"><code>(format-time d tz)</code></div><pre class="doc">Return time in 'HH:mm:ss tz' format.
 
 Example:
 (format-date-and-time (java.util.Date.) &quot;PST&quot;)
-;=&gt; &quot;11:46:32 PST&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L77">Source</a></div></div><div class="public" id="var-get-dst-hour-in-utc-seconds"><h3>get-dst-hour-in-utc-seconds</h3><div class="usage"><code>(get-dst-hour-in-utc-seconds hr tz)</code></div><pre class="doc">Convert hour from a to seconds since 00:00 UTC. Can return value greater than (* 24 60 60).
+;=&gt; &quot;11:46:32 PST&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L85">Source</a></div></div><div class="public" id="var-get-dst-hour-in-utc-seconds"><h3>get-dst-hour-in-utc-seconds</h3><div class="usage"><code>(get-dst-hour-in-utc-seconds hr tz)</code></div><pre class="doc">Convert hour from a to seconds since 00:00 UTC. Can return value greater than (* 24 60 60).
 Disregards daylight saving settings for a timezone.
 
 Example:
 (get-dst-hour-in-utc-seconds 23 &quot;CET&quot;)
-;=&gt; 75600</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L33">Source</a></div></div><div class="public" id="var-get-hour-in-seconds"><h3>get-hour-in-seconds</h3><div class="usage"><code>(get-hour-in-seconds d tz)</code></div><pre class="doc">Get date's hour in seconds, for a specified timezone.
+;=&gt; 75600</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L41">Source</a></div></div><div class="public" id="var-get-hour-in-seconds"><h3>get-hour-in-seconds</h3><div class="usage"><code>(get-hour-in-seconds d tz)</code></div><pre class="doc">Get date's hour in seconds, for a specified timezone.
 
 Example:
 (str (java.util.Date.))
 ;=&gt; &quot;Thu Feb 15 20:45:01 CET 2013&quot;
 (get-hour-in-seconds (java.util.Date.) &quot;CET&quot;)
 ;=&gt; 72000
-</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L50">Source</a></div></div><div class="public" id="var-get-raw-hour-in-utc-seconds"><h3>get-raw-hour-in-utc-seconds</h3><div class="usage"><code>(get-raw-hour-in-utc-seconds hr tz)</code></div><pre class="doc">Convert hour from a to seconds since 00:00 UTC. Can return value greater than (* 24 60 60).
+</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L58">Source</a></div></div><div class="public" id="var-get-raw-hour-in-utc-seconds"><h3>get-raw-hour-in-utc-seconds</h3><div class="usage"><code>(get-raw-hour-in-utc-seconds hr tz)</code></div><pre class="doc">Convert hour from a to seconds since 00:00 UTC. Can return value greater than (* 24 60 60).
 Disregards daylight saving settings for a timezone.
 
 Example:
 (get-raw-hour-in-utc-seconds 23 &quot;CET&quot;)
-;=&gt; 79200</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L16">Source</a></div></div><div class="public" id="var-get-timezone-hour"><h3>get-timezone-hour</h3><div class="usage"><code>(get-timezone-hour tz)</code></div><pre class="doc">Get current hour and minutes for a designated timezone.
+;=&gt; 79200</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L24">Source</a></div></div><div class="public" id="var-get-timezone-hour"><h3>get-timezone-hour</h3><div class="usage"><code>(get-timezone-hour tz)</code></div><pre class="doc">Get current hour and minutes for a designated timezone.
 
 Example:
 (get-timezone-hour &quot;PST&quot;)
-;=&gt; &quot;11:37&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L5">Source</a></div></div></div></body></html>
+;=&gt; &quot;11:37&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/util/datetime.clj#L13">Source</a></div></div></div></body></html>

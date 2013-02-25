@@ -5,40 +5,40 @@ The generated element has :onclick handler which invokes Ganelon.performButtonAc
 Example:
 
 (action :span &quot;test1&quot;  {:x 1} {:class &quot;btn&quot;} [:strong &quot;Invoke&quot;])
-;=&gt;&quot;&lt;span class=&quot;btn&quot; onclick=&quot;return Ganelon.performButtonAction(this, 'test1', 'x=1');&quot;&gt;&lt;strong&gt;Invoke&lt;/strong&gt;&lt;/span&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L106">Source</a></div></div><div class="public" id="var-action-button"><h3>action-button</h3><div class="usage"><code>(action-button action-name params attributes &amp; body)</code></div><pre class="doc">Generate action link using hiccup.core/html. If *widget-id* scope is present, it is appended to params map - unless explictly provided.
+;=&gt;&quot;&lt;span class=&quot;btn&quot; onclick=&quot;return Ganelon.performButtonAction(this, 'test1', 'x=1');&quot;&gt;&lt;strong&gt;Invoke&lt;/strong&gt;&lt;/span&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L114">Source</a></div></div><div class="public" id="var-action-button"><h3>action-button</h3><div class="usage"><code>(action-button action-name params attributes &amp; body)</code></div><pre class="doc">Generate action link using hiccup.core/html. If *widget-id* scope is present, it is appended to params map - unless explictly provided.
 The generated element has :onclick handler which invokes Ganelon.performButtonAction function.
 
 Example:
 
 (action-button &quot;test1&quot;  {:x 1} {:class &quot;btn&quot;} [:strong &quot;Invoke&quot;])
-;=&gt;&quot;&lt;button class=&quot;btn&quot; href=&quot;#&quot; onclick=&quot;return Ganelon.performButtonAction(this, 'test1', 'x=1');&quot;&gt;&lt;strong&gt;Invoke&lt;/strong&gt;&lt;/button&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L134">Source</a></div></div><div class="public" id="var-action-form"><h3>action-form</h3><div class="usage"><code>(action-form action-name params attributes &amp; body)</code></div><pre class="doc">Generate form which on submit invokes designated action.
+;=&gt;&quot;&lt;button class=&quot;btn&quot; href=&quot;#&quot; onclick=&quot;return Ganelon.performButtonAction(this, 'test1', 'x=1');&quot;&gt;&lt;strong&gt;Invoke&lt;/strong&gt;&lt;/button&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L142">Source</a></div></div><div class="public" id="var-action-form"><h3>action-form</h3><div class="usage"><code>(action-form action-name params attributes &amp; body)</code></div><pre class="doc">Generate form which on submit invokes designated action.
 
 If widget-id in scope is present, it is added to parameters map - unless explictly provided.
 
 (action-form &quot;test1&quot; {:y 1} {:class &quot;well&quot;} [:input {:type &quot;submit&quot;}])
-;=&gt; &quot;&lt;form class=\&quot;well\&quot; method=\&quot;POST\&quot; onsubmit=\&quot;return Ganelon.performFormAction(this, 'test1', 'y=1&amp;amp;widget-id=%23');\&quot;&gt;&lt;input type=\&quot;submit\&quot; /&gt;&lt;/form&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L172">Source</a></div></div><div class="public" id="var-action-link"><h3>action-link</h3><div class="usage"><code>(action-link action-name params attributes &amp; body)</code></div><pre class="doc">Generate action link using hiccup.core/html. If *widget-id* scope is present, it is appended to params map - unless explictly provided.
+;=&gt; &quot;&lt;form class=\&quot;well\&quot; method=\&quot;POST\&quot; onsubmit=\&quot;return Ganelon.performFormAction(this, 'test1', 'y=1&amp;amp;widget-id=%23');\&quot;&gt;&lt;input type=\&quot;submit\&quot; /&gt;&lt;/form&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L180">Source</a></div></div><div class="public" id="var-action-link"><h3>action-link</h3><div class="usage"><code>(action-link action-name params attributes &amp; body)</code></div><pre class="doc">Generate action link using hiccup.core/html. If *widget-id* scope is present, it is appended to params map - unless explictly provided.
 The generated element has :onclick handler which invokes Ganelon.performButtonAction function.
 
 Example:
 
 (action-link &quot;test1&quot;  {:x 1} {:class &quot;btn&quot;} [:strong &quot;Invoke&quot;])
-;=&gt;&quot;&lt;a class=&quot;btn&quot; href=&quot;#&quot; onclick=&quot;return Ganelon.performButtonAction(this, 'test1', 'x=1');&quot;&gt;&lt;strong&gt;Invoke&lt;/strong&gt;&lt;/a&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L123">Source</a></div></div><div class="public" id="var-action-loader-button"><h3>action-loader-button</h3><div class="usage"><code>(action-loader-button action-name params attributes &amp; body)</code></div><pre class="doc">Just as action-button, but with with-ajax-loader applied to attributes.
+;=&gt;&quot;&lt;a class=&quot;btn&quot; href=&quot;#&quot; onclick=&quot;return Ganelon.performButtonAction(this, 'test1', 'x=1');&quot;&gt;&lt;strong&gt;Invoke&lt;/strong&gt;&lt;/a&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L131">Source</a></div></div><div class="public" id="var-action-loader-button"><h3>action-loader-button</h3><div class="usage"><code>(action-loader-button action-name params attributes &amp; body)</code></div><pre class="doc">Just as action-button, but with with-ajax-loader applied to attributes.
 
 (action-loader-button &quot;test1&quot; {:x 1} {:class &quot;btn&quot;} [:strong &quot;Invoke&quot;])
-&quot;&lt;button class=\&quot;btn\&quot; data-loading-text=\&quot;&amp;lt;img src='/ganelon/img/loading.gif'/&amp;gt;\&quot; href=\&quot;#\&quot; onclick=\&quot;return Ganelon.performButtonAction(this, 'test1', 'x=1');\&quot;&gt;&lt;strong&gt;Invoke&lt;/strong&gt;&lt;/button&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L163">Source</a></div></div><div class="public" id="var-action-loader-link"><h3>action-loader-link</h3><div class="usage"><code>(action-loader-link action-name params attributes &amp; body)</code></div><pre class="doc">Just as action-link, but with with-ajax-loader applied to attributes.
+&quot;&lt;button class=\&quot;btn\&quot; data-loading-text=\&quot;&amp;lt;img src='/ganelon/img/loading.gif'/&amp;gt;\&quot; href=\&quot;#\&quot; onclick=\&quot;return Ganelon.performButtonAction(this, 'test1', 'x=1');\&quot;&gt;&lt;strong&gt;Invoke&lt;/strong&gt;&lt;/button&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L171">Source</a></div></div><div class="public" id="var-action-loader-link"><h3>action-loader-link</h3><div class="usage"><code>(action-loader-link action-name params attributes &amp; body)</code></div><pre class="doc">Just as action-link, but with with-ajax-loader applied to attributes.
 
 (action-loader-link &quot;test1&quot; {:x 1} {:class &quot;btn&quot;} [:strong &quot;Invoke&quot;])
-&quot;&lt;a class=\&quot;btn\&quot; data-loading-text=\&quot;&amp;lt;img src='/ganelon/img/loading.gif'/&amp;gt;\&quot; href=\&quot;#\&quot; onclick=\&quot;return Ganelon.performButtonAction(this, 'test1', 'x=1');\&quot;&gt;&lt;strong&gt;Invoke&lt;/strong&gt;&lt;/a&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L155">Source</a></div></div><div class="public" id="var-current-widget-id"><h3>current-widget-id</h3><div class="usage"><code>(current-widget-id)</code></div><pre class="doc">Return current widget id.
+&quot;&lt;a class=\&quot;btn\&quot; data-loading-text=\&quot;&amp;lt;img src='/ganelon/img/loading.gif'/&amp;gt;\&quot; href=\&quot;#\&quot; onclick=\&quot;return Ganelon.performButtonAction(this, 'test1', 'x=1');\&quot;&gt;&lt;strong&gt;Invoke&lt;/strong&gt;&lt;/a&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L163">Source</a></div></div><div class="public" id="var-current-widget-id"><h3>current-widget-id</h3><div class="usage"><code>(current-widget-id)</code></div><pre class="doc">Return current widget id.
 
 Example:
 
 (with-id (str &quot;&lt;p&gt;Hello &quot; (current-widget-id) &quot;&lt;/p&gt;&quot;))
-;=&gt; &quot;&lt;p&gt;Hello 6a70fd73-a39f-423e-9fe0-3339ea75376a&lt;/p&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L96">Source</a></div></div><div class="public" id="var-with-ajax-loader"><h3>with-ajax-loader</h3><div class="usage"><code>(with-ajax-loader attributes)</code></div><pre class="doc">Enhance attributes with Bootstrap's data-loading-text attribute set to  '&lt;img src='/ganelon/img/loading.gif'/&gt;'.
+;=&gt; &quot;&lt;p&gt;Hello 6a70fd73-a39f-423e-9fe0-3339ea75376a&lt;/p&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L104">Source</a></div></div><div class="public" id="var-with-ajax-loader"><h3>with-ajax-loader</h3><div class="usage"><code>(with-ajax-loader attributes)</code></div><pre class="doc">Enhance attributes with Bootstrap's data-loading-text attribute set to  '&lt;img src='/ganelon/img/loading.gif'/&gt;'.
 
 Example:
 
 (action-link &quot;test1&quot; {:x 1} (with-ajax-loader {:class &quot;btn&quot;}) [:strong &quot;Invoke&quot;])
-&quot;&lt;a class=\&quot;btn\&quot; data-loading-text=\&quot;&amp;lt;img src='/ganelon/img/loading.gif'/&amp;gt;\&quot; href=\&quot;#\&quot; onclick=\&quot;return Ganelon.performButtonAction(this, 'test1', 'x=1');\&quot;&gt;&lt;strong&gt;Invoke&lt;/strong&gt;&lt;/a&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L145">Source</a></div></div><div class="public" id="var-with-div"><h3>with-div</h3><h4 class="macro">macro</h4><div class="usage"><code>(with-div &amp; rest)</code></div><pre class="doc">Generate random widget UID, and wrap its body with a DIV tag. Establishes widget-id scope, which can
+&quot;&lt;a class=\&quot;btn\&quot; data-loading-text=\&quot;&amp;lt;img src='/ganelon/img/loading.gif'/&amp;gt;\&quot; href=\&quot;#\&quot; onclick=\&quot;return Ganelon.performButtonAction(this, 'test1', 'x=1');\&quot;&gt;&lt;strong&gt;Invoke&lt;/strong&gt;&lt;/a&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L153">Source</a></div></div><div class="public" id="var-with-div"><h3>with-div</h3><h4 class="macro">macro</h4><div class="usage"><code>(with-div &amp; rest)</code></div><pre class="doc">Generate random widget UID, and wrap its body with a DIV tag. Establishes widget-id scope, which can
 be used for example by action links to pass current widget id.
 
 Wraps &amp; rest with hiccup.core/html for more consise code. If hiccup is not used/necessary, with-id or with-set-id macros
@@ -47,7 +47,7 @@ should be used.
 Example:
 
 (with-div
-  [:h4 &quot;Hello&quot;])</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L12">Source</a></div></div><div class="public" id="var-with-el"><h3>with-el</h3><h4 class="macro">macro</h4><div class="usage"><code>(with-el el &amp; rest)</code></div><pre class="doc">Generate random widget UID, and wrap its body with a tag of a supplied type. Establishes widget-id scope, which can
+  [:h4 &quot;Hello&quot;])</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L20">Source</a></div></div><div class="public" id="var-with-el"><h3>with-el</h3><h4 class="macro">macro</h4><div class="usage"><code>(with-el el &amp; rest)</code></div><pre class="doc">Generate random widget UID, and wrap its body with a tag of a supplied type. Establishes widget-id scope, which can
 be used for example by action links to pass current widget id.
 
 Wraps &amp; rest with hiccup.core/html for more consise code. If hiccup is not used/necessary, with-id or with-set-id macros
@@ -56,18 +56,18 @@ should be used.
 Example:
 
 (with-el :h1 &quot;Hello&quot;)
-;=&gt; &quot;&lt;h1 id=&quot;b6d8d958-fb2e-4e29-94ba-bfb0a11f006b&quot;&gt;Hello&lt;/h1&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L81">Source</a></div></div><div class="public" id="var-with-id"><h3>with-id</h3><h4 class="macro">macro</h4><div class="usage"><code>(with-id &amp; rest)</code></div><pre class="doc">Establishes widget-id scope, which can be used for example by action links to pass current widget id.
+;=&gt; &quot;&lt;h1 id=&quot;b6d8d958-fb2e-4e29-94ba-bfb0a11f006b&quot;&gt;Hello&lt;/h1&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L89">Source</a></div></div><div class="public" id="var-with-id"><h3>with-id</h3><h4 class="macro">macro</h4><div class="usage"><code>(with-id &amp; rest)</code></div><pre class="doc">Establishes widget-id scope, which can be used for example by action links to pass current widget id.
 
 Example:
 
 (with-id (str &quot;&lt;p&gt;Hello &quot; (current-widget-id) &quot;&lt;/p&gt;&quot;))
-;=&gt; &quot;&lt;p&gt;Hello 6a70fd73-a39f-423e-9fe0-3339ea75376a&lt;/p&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L69">Source</a></div></div><div class="public" id="var-with-set-id"><h3>with-set-id</h3><h4 class="macro">macro</h4><div class="usage"><code>(with-set-id id &amp; rest)</code></div><pre class="doc">Establishes widget-id scope for a supplied id,
+;=&gt; &quot;&lt;p&gt;Hello 6a70fd73-a39f-423e-9fe0-3339ea75376a&lt;/p&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L77">Source</a></div></div><div class="public" id="var-with-set-id"><h3>with-set-id</h3><h4 class="macro">macro</h4><div class="usage"><code>(with-set-id id &amp; rest)</code></div><pre class="doc">Establishes widget-id scope for a supplied id,
 which can be used for example by action links to pass current widget id.
 
 Example:
 
 (with-set-id &quot;test1&quot; (str &quot;&lt;p&gt;Hello &quot; (current-widget-id) &quot;&lt;/p&gt;&quot;))
-;=&gt; &quot;&lt;p&gt;Hello test1&lt;/p&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L55">Source</a></div></div><div class="public" id="var-with-span"><h3>with-span</h3><h4 class="macro">macro</h4><div class="usage"><code>(with-span &amp; rest)</code></div><pre class="doc">Generate random widget UID, and wrap its body with a SPAN tag. Establishes widget-id scope, which can
+;=&gt; &quot;&lt;p&gt;Hello test1&lt;/p&gt;&quot;</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L63">Source</a></div></div><div class="public" id="var-with-span"><h3>with-span</h3><h4 class="macro">macro</h4><div class="usage"><code>(with-span &amp; rest)</code></div><pre class="doc">Generate random widget UID, and wrap its body with a SPAN tag. Establishes widget-id scope, which can
 be used for example by action links to pass current widget id.
 
 Wraps &amp; rest with hiccup.core/html for more consise code. If hiccup is not used/necessary, with-id or with-set-id macros
@@ -75,7 +75,7 @@ should be used.
 
 Example:
 
-(with-span  &quot;Hello&quot;)</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L42">Source</a></div></div><div class="public" id="var-with-widget"><h3>with-widget</h3><h4 class="macro">macro</h4><div class="usage"><code>(with-widget id &amp; rest)</code></div><pre class="doc">Take widget UID as parameter, and wrap its body with a DIV tag. Establishes widget-id scope, which can
+(with-span  &quot;Hello&quot;)</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L50">Source</a></div></div><div class="public" id="var-with-widget"><h3>with-widget</h3><h4 class="macro">macro</h4><div class="usage"><code>(with-widget id &amp; rest)</code></div><pre class="doc">Take widget UID as parameter, and wrap its body with a DIV tag. Establishes widget-id scope, which can
 be used for example by action links to pass current widget id.
 
 Wraps &amp; rest with hiccup.core/html for more consise code. If hiccup is not used/necessary, with-id or with-set-id macros
@@ -84,4 +84,4 @@ should be used.
 Example:
 
 (with-id &quot;widget1&quot;
-  [:h4 &quot;Hello&quot;])</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L26">Source</a></div></div></div></body></html>
+  [:h4 &quot;Hello&quot;])</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/widgets.clj#L34">Source</a></div></div></div></body></html>

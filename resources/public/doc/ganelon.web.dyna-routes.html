@@ -12,20 +12,20 @@ Example usage:
 
 (compojure.core/ANY &quot;/*&quot; []
   (-&gt; (ganelon.web.dyna-routes/default-routes-fn)
-    wrap-fake-admin)))</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/dyna_routes.clj#L80">Source</a></div></div><div class="public" id="var-defpage"><h3>defpage</h3><h4 class="macro">macro</h4><div class="usage"><code>(defpage path args &amp; body)</code></div><pre class="doc">Macro inspired by Noir's defpage, but with a full access to Compojure's parameters support.
+    wrap-fake-admin)))</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/dyna_routes.clj#L88">Source</a></div></div><div class="public" id="var-defpage"><h3>defpage</h3><h4 class="macro">macro</h4><div class="usage"><code>(defpage path args &amp; body)</code></div><pre class="doc">Macro inspired by Noir's defpage, but with a full access to Compojure's parameters support.
 Registers route for a provided path and parameters using compojure.core/ANY macro in a :default namespace.
 
 Example usage:
 
 (ganelon.web.dyna-routes/defpage &quot;/routing/sample&quot; []
-  &quot;Hello world!&quot;)</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/dyna_routes.clj#L91">Source</a></div></div><div class="public" id="var-route-ns-fn"><h3>route-ns-fn</h3><div class="usage"><code>(route-ns-fn name-space)</code></div><pre class="doc">Return ring handler for a namespace provided as a parameter. Then handler provides
+  &quot;Hello world!&quot;)</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/dyna_routes.clj#L99">Source</a></div></div><div class="public" id="var-route-ns-fn"><h3>route-ns-fn</h3><div class="usage"><code>(route-ns-fn name-space)</code></div><pre class="doc">Return ring handler for a namespace provided as a parameter. Then handler provides
 all of the routes and middleware registered in a designated namespace.
 
 Example usage:
 
 (compojure.core/GET &quot;/routing/sample5/*&quot; []
   (-&gt; (ganelon.web.dyna-routes/route-ns-fn :sample-admin)
-      wrap-fake-admin)))</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/dyna_routes.clj#L67">Source</a></div></div><div class="public" id="var-setmiddleware%21"><h3>setmiddleware!</h3><div class="usage"><code>(setmiddleware! name mw)</code><code>(setmiddleware! name-space name mw)</code></div><pre class="doc">Register middleware in a namespace. When no namespace is provided, use :default namespace.
+      wrap-fake-admin)))</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/dyna_routes.clj#L75">Source</a></div></div><div class="public" id="var-setmiddleware%21"><h3>setmiddleware!</h3><div class="usage"><code>(setmiddleware! name mw)</code><code>(setmiddleware! name-space name mw)</code></div><pre class="doc">Register middleware in a namespace. When no namespace is provided, use :default namespace.
 
 This feature is an alternative to classical approach with Ring handlers/middleware chain.
 
@@ -34,7 +34,7 @@ Middleware functions from a namespace can be referenced later on by route-ns-fn.
 Example usage:
 
 (dr/setmiddleware! :i18n-detect
-  #(fn [request] (detect-lang % request)))</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/dyna_routes.clj#L33">Source</a></div></div><div class="public" id="var-setroute%21"><h3>setroute!</h3><div class="usage"><code>(setroute! name route)</code><code>(setroute! name-space name route)</code></div><pre class="doc">Register route in a namespace. When no namespace is provided, use :default namespace.
+  #(fn [request] (detect-lang % request)))</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/dyna_routes.clj#L41">Source</a></div></div><div class="public" id="var-setroute%21"><h3>setroute!</h3><div class="usage"><code>(setroute! name route)</code><code>(setroute! name-space name route)</code></div><pre class="doc">Register route in a namespace. When no namespace is provided, use :default namespace.
 
 Routes from a namespace can be referenced later on by route-ns-fn.
 
@@ -42,4 +42,4 @@ Example:
 
 (setroute! :example2
   (compojure.core/GET &quot;/routing/sample2&quot; []
-    &quot;Hello world !!!&quot;))</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/dyna_routes.clj#L14">Source</a></div></div></div></body></html>
+    &quot;Hello world !!!&quot;))</pre><div class="src-link"><a href="http://github.com/tlipski/ganelon/blob/master/src/ganelon/web/dyna_routes.clj#L22">Source</a></div></div></div></body></html>
