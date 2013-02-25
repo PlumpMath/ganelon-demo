@@ -62,7 +62,7 @@
         [:h2 "Using Ganelon"]
         [:p
           "To apply Ganelon in your web app project, simply add the following leiningen dependency:"]
-        [:p "<!-- HTML generated using hilite.me --><div class=\"code\"><pre class=\"code\">[<span class=\"symbol\">ganelon</span> <span class=\"literal\">&quot;0.6-SNAPSHOT&quot;</span>]</pre></div>"]
+        [:p "<!-- HTML generated using hilite.me --><div class=\"code\"><pre class=\"code\">[<span class=\"symbol\">ganelon</span> <span class=\"literal\">&quot;0.7-SNAPSHOT&quot;</span>]</pre></div>"]
 
         [:p "To run Ganelon-powered application just use standard Ring mechanisms. For example, code used to run this entire site
         with " [:code "ring.adapter.jetty"] " is listed below:"]
