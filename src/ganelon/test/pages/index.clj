@@ -59,8 +59,8 @@
       "Microframework bringing instant development of AJAX-enabled web applications to Clojure/Ring."
       [:div {:style "text-align: center"}
         [:div
-         [:a.btn.btn-large.btn-primary {:style "margin-right: 10px"} [:i.icon-github] "&nbsp;Browse the source codes"]
-         [:a.btn.btn-large.btn-primary {:style "margin-left: 10px"} [:i.icon-star] "&nbsp;Star on GitHub"]
+         [:a.btn.btn-large.btn-primary {:href "https://github.com/tlipski/ganelon" :style "margin-right: 10px"} [:i.icon-github] "&nbsp;Browse the source codes"]
+         [:a.btn.btn-large.btn-primary {:href "https://github.com/tlipski/ganelon/star":style "margin-left: 10px"} [:i.icon-star] "&nbsp;Star on GitHub"]
          ]]
       )
     [:div {:class "container" :style "padding-top: 30px;"}
@@ -112,7 +112,7 @@
         [:a {:href "https://mydailysocial.info" :target "_blank"} "Daily Social"] "."]
        [:p "If you are using Ganelon, " "<a href=\"https://twitter.com/intent/tweet?screen_name=tomeklipski&text=http%3A%2F%2F...%20is%20powered%20by%20%23ganelon%20and%20%23clojure%20as%20well!\">tell me about it!</a>"]
        [:p "This demo site is of course powered by Ganelon as well. " [:br]
-        [:a {:href "http://github.com/tlipski/ganelon/demo" :target "_blank"} "View source"]]
+        [:a {:href "http://github.com/tlipski/ganelon-demo" :target "_blank"} "View source"]]
        ]]
      [:div {:class "row"}
       [:div {:class "span6"}
