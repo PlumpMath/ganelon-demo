@@ -100,6 +100,31 @@
         [:p "One example of such operation can be an update of a certain page fragment or fragments. Another - displaying of a
             modal window or a Growl-style notification. But most importantly, it is very easy to provide in additional actions -
             just by referencing another .js file."]
+        [:p "Client side JavaScript action interface is provided through the following files (assuming that /public resources are published as /):"]
+        [:p
+         [:div.code
+          [:pre.code
+           "(<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/jquery-1.8.1.min.js\"</span>) <span class=\"comment\">;jQuery - required</span>
+           (<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/bootstrap.js\"</span>) <span class=\"comment\">;Bootstrap - optional</span>
+           (<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/ganelon.js\"</span>) <span class=\"comment\">;basic actions support</span>
+           (<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/ext/ganelon.ops.bootstrap.js\"</span>) <span class=\"comment\">;additional Bootstrap related actions</span>
+           (<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/ext/ganelon.ops.gritter.js\"</span>) <span class=\"comment\">;growl-style notifications through gritter.js</span>
+           (<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/actions.js\"</span>) <span class=\"comment\">;dynamic actions interface</span>"
+           ]]
+         ]
+        [:p "The Ganelon JavaScript files are available in " [:a {:href "https://github.com/tlipski/ganelon/tree/master/resources/public/ganelon/js"} "public.ganelon.js package"
+                                                              ] "- in case you need to merge them with your other client-side modules."]
+        [:p "The Bootstrap and gritter support is optional - you can easily overwrite them with your own plugins."]
+        [:p "You might also want to include CSS file for Growl-style notifications or Bootstrap (2.3.0) - or merge them with your CSS files:"]
+        [:p
+         [:div.code
+          [:pre.code
+           "(<span class=\"function\">hiccup/include-css</span> <span class=\"literal\">\"/ganelon/css/bootstrap.css\"</span>) <span class=\"comment\">;Bootstrap - optional</span>
+(<span class=\"function\">hiccup/include-css</span> <span class=\"literal\">\"/ganelon/css/jquery.gritter.css\"</span>) <span class=\"comment\">;growl-style notifications - optional</span>"
+           ]]
+         ]
+        [:p "The Ganelon CSS files are available in " [:a {:href "https://github.com/tlipski/ganelon/tree/master/resources/public/ganelon/css"} "public.ganelon.css package"
+                                                       ] "- in case you need to merge them with your other client-side stylesheets."]
 ;        [:div {:style "text-align: center"} [:img {:src "/ganelon-demo/img/arch-operations.png"}]]
 
         [:p "Code defining DIV#sample0 and a link invoking the action:"]

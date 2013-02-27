@@ -62,12 +62,12 @@
         [:p "This demo site runs on " [:a {:href "http://heroku.com"} "heroku"] ". Source code highlightning powered by "
          [:a {:href "http://hilite.me/"} "hilite.me"] "."]
         ]]
-(hiccup/include-js "/ganelon/js/jquery-1.8.1.min.js")
-(hiccup/include-js "/ganelon/js/bootstrap.js")
-(hiccup/include-js "/ganelon/js/ganelon.js")
-(hiccup/include-js "/ganelon/js/ext/ganelon.ops.bootstrap.js")
-(hiccup/include-js "/ganelon/js/ext/ganelon.ops.gritter.js")
-(hiccup/include-js "/ganelon/actions.js")
+(hiccup/include-js "/ganelon/js/jquery-1.8.1.min.js") ;jQuery - required
+(hiccup/include-js "/ganelon/js/bootstrap.js") ;Bootstrap - optional
+(hiccup/include-js "/ganelon/js/ganelon.js") ;basic actions support
+(hiccup/include-js "/ganelon/js/ext/ganelon.ops.bootstrap.js") ;additional Bootstrap related actions
+(hiccup/include-js "/ganelon/js/ext/ganelon.ops.gritter.js") ; growl-style notifications through gritter.js
+(hiccup/include-js "/ganelon/actions.js") ;dynamic actions interface
 "
 <script type=\"text/javascript\">
   var _gaq = _gaq || [];
