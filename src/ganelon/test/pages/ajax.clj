@@ -104,12 +104,12 @@
         [:p
          [:div.code
           [:pre.code
-           "(<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/jquery-1.8.1.min.js\"</span>) <span class=\"comment\">;jQuery - required</span>
-           (<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/bootstrap.js\"</span>) <span class=\"comment\">;Bootstrap - optional</span>
-           (<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/ganelon.js\"</span>) <span class=\"comment\">;basic actions support</span>
-           (<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/ext/ganelon.ops.bootstrap.js\"</span>) <span class=\"comment\">;additional Bootstrap related actions</span>
-           (<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/ext/ganelon.ops.gritter.js\"</span>) <span class=\"comment\">;growl-style notifications through gritter.js</span>
-           (<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/actions.js\"</span>) <span class=\"comment\">;dynamic actions interface</span>"
+"(<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/jquery-1.8.1.min.js\"</span>) <span class=\"comment\">;jQuery - required</span>
+(<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/bootstrap.js\"</span>) <span class=\"comment\">;Bootstrap - optional</span>
+(<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/ganelon.js\"</span>) <span class=\"comment\">;basic actions support</span>
+(<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/ext/ganelon.ops.bootstrap.js\"</span>) <span class=\"comment\">;additional Bootstrap related actions</span>
+(<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/js/ext/ganelon.ops.gritter.js\"</span>) <span class=\"comment\">;growl-style notifications through gritter.js</span>
+(<span class=\"function\">hiccup/include-js</span> <span class=\"literal\">\"/ganelon/actions.js\"</span>) <span class=\"comment\">;dynamic actions interface</span>"
            ]]
          ]
         [:p "The Ganelon JavaScript files are available in " [:a {:href "https://github.com/tlipski/ganelon/tree/master/resources/public/ganelon/js"} "public.ganelon.js package"
@@ -119,7 +119,7 @@
         [:p
          [:div.code
           [:pre.code
-           "(<span class=\"function\">hiccup/include-css</span> <span class=\"literal\">\"/ganelon/css/bootstrap.css\"</span>) <span class=\"comment\">;Bootstrap - optional</span>
+"(<span class=\"function\">hiccup/include-css</span> <span class=\"literal\">\"/ganelon/css/bootstrap.css\"</span>) <span class=\"comment\">;Bootstrap - optional</span>
 (<span class=\"function\">hiccup/include-css</span> <span class=\"literal\">\"/ganelon/css/jquery.gritter.css\"</span>) <span class=\"comment\">;growl-style notifications - optional</span>"
            ]]
          ]
