@@ -39,7 +39,8 @@
     (noir.response/json {:x x :y y :z "!"})))
 
 (defn wrap-fake-admin [handler]
-  (fn [req] (if (:admin (:params req))
+  (fn [req]
+    (if (:admin (:params req))
               (handler req) {:status 401 :body "401 Forbidden"})))
 
 (ganelon.web.dyna-routes/setroute! :example4

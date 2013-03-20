@@ -97,7 +97,7 @@
        [:h2 [:i.icon-star] "&nbsp;Easy to use"]
        [:p "If you are using <code>leiningen</code>, just add following dependency to your <code>project.clj</code> file:"
        [:code
-        "<!-- HTML generated using hilite.me --><div class=\"code\"><pre class=\"code\">[<span class=\"symbol\">ganelon</span> <span class=\"literal\">&quot;0.8-SNAPSHOT&quot;</span>]</pre></div>"]]
+        "<!-- HTML generated using hilite.me --><div class=\"code\"><pre class=\"code\">[<span class=\"symbol\">ganelon</span> <span class=\"literal\">&quot;0.9-SNAPSHOT&quot;</span>]</pre></div>"]]
        [:p "And you are good to go!" [:br ] "All required libraries will be loaded, "
         "CSS and JS files will be available as well."
         ]
