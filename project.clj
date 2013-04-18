@@ -6,10 +6,10 @@
 ;; agreeing to be bound by the terms of this license.  You must not
 ;; remove this notice, or any other, from this software.
 
-(defproject ganelon-demo "0.9-SNAPSHOT"
+(defproject ganelon-demo "0.9.0"
   :description "Demo site for Ganelon"
   :url "http://ganelon.tomeklipski.com"
-  :dependencies [[ganelon "0.9-SNAPSHOT"]]
+  :dependencies [[ganelon "0.9.0"]]
   :license {:name "Eclipse Public License - v 1.0"
             :url "http://www.eclipse.org/legal/epl-v10.html"
             :distribution :repo
