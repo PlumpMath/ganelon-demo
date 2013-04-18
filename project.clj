@@ -6,7 +6,7 @@
 ;; agreeing to be bound by the terms of this license.  You must not
 ;; remove this notice, or any other, from this software.
 
-(defproject ganelon-demo "0.9.0"
+(defproject ganelon-demo "0.9.1"
   :description "Demo site for Ganelon"
   :url "http://ganelon.tomeklipski.com"
   :dependencies [[ganelon "0.9.0"]]

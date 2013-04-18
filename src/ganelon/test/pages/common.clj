@@ -35,13 +35,11 @@
              [:div {:class "nav-collapse collapse"}
               [:ul {:class "nav"}
                (navbar-link "/basics" [:i.icon-lightbulb] "&nbsp;Basic concepts")
-;               (navbar-link "/tutorial" [:i.icon-book] "&nbsp;Tutorial")
                (navbar-link "/ajax" [:i.icon-spinner] "&nbsp;AJAX")
                (navbar-link "/routing" [:i.icon-road] "&nbsp;Routing")
-;               (navbar-link "/extras" [:i.icon-star] "Extras")
+               (navbar-link "http://ganelon-tutorial.tomeklipski.com" [:i.icon-book] "&nbsp;Tutorial app")
                (navbar-link "/doc/index.html" [:i.icon-book] "API docs")
                [:li [:a {:href "https://github.com/tlipski/ganelon" :target "_blank"} [:i.icon-github] "&nbsp;Source codes"]]
-               [:li [:a {:href "https://github.com/tlipski/ganelon/issues" :target "_blank"} [:i.icon-tasks] "&nbsp;Issue tracker"]]
                ]]]]]]))
 
 (defn layout [& content]
